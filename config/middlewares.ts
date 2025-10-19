@@ -31,13 +31,7 @@ export default [
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
-  {
-    name: 'strapi::session',
-    config: {
-      secure: false, // 👈 this line fixes "Cannot send secure cookie" on Render
-      sameSite: 'none',
-    },
-  },
+  'strapi::session',
   'strapi::favicon',
   'strapi::public',
 ];
